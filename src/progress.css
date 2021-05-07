@@ -1,0 +1,14 @@
+div.my-progress-bar {
+	width: 300px;
+	height: 3px;
+	background: rgba(0, 0, 0, .1);
+}
+
+div.my-progress-bar-complete {
+	width: 0;
+	height: 100%;
+    background: linear-gradient(to right, rgba(var(--theme-color), 1),
+                                        rgba(var(--theme-color), .7),
+                                        rgba(var(--theme-color), .5));
+    transition: var(--progress-bar-transition);
+}

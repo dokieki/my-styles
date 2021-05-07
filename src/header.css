@@ -1,0 +1,81 @@
+header {
+	font-family: 'Roboto-Light';
+	background: var(--header-background);
+	width: 100%;
+	height: 66px;
+	transition: .4s;
+	position: fixed;
+}
+
+header div.my-header-container {
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header div.my-header-container h1 {
+	color: var(--header-text-color);
+	transition: .3s;
+}
+
+header div.my-header-container h1 a {
+	text-decoration: none;
+	color: var(--header-text-color);
+}
+
+header div.my-header-container ul {
+	list-style: none;
+	width: auto;
+}
+
+header div.my-header-container ul li {
+	display: inline-block;
+	cursor: pointer;
+	transition: .5s;
+	padding: 7px;
+	font-size: 20px;
+	margin-left: 1em;
+}
+
+header div.my-header-container ul li * {
+	color: var(--header-text-color);
+}
+
+header div.my-header-container ul li svg {
+	transform: scale(1);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+@media screen and (max-width: 780px) {
+
+	header div.my-header-container {
+		width: 95%;
+	}
+
+	header div.my-header-container h1 {
+		font-size: 16px;
+	}
+
+	header div.my-header-container ul li {
+		font-size: 12px;
+		margin-left: .5em;
+	}
+}
+
+@media screen and (max-width: 290px) {
+	header div.my-header-container h1 {
+		font-size: 22px;
+	}
+
+	header div.my-header-container ul {
+		display: none !important;
+	}
+}

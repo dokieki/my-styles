@@ -1,0 +1,33 @@
+div.my-loading-container {
+	width: 200px;
+	height: 3em;
+	background: none;
+}
+
+div.my-loading-container div {
+	width: 20px;
+	height: 10px;
+	background: rgb(var(--theme-color));
+	animation: loading 2s infinite;
+}
+
+@keyframes loading {
+	0% {
+		width: 0%;
+		float: left;
+	}
+
+	20% {
+		width: 100%;
+	}
+
+	60% {
+		width: 0%;
+		float: right;
+	}
+
+	100% {
+		width: 0%;
+		float: right;
+	}
+}

@@ -1,0 +1,46 @@
+.my-row {
+	width: 100%;
+	height: 4em;
+}
+
+.my-row-large {
+	height: 6em;
+}
+
+.my-row-2 {
+	width: 100%;
+	min-height: var(--constructor-row-2-height);
+}
+
+.my-row-container {
+	text-align: center;
+	padding: var(--constructor-row-container-padding);
+	min-width: var(--constructor-row-container-width);
+	min-height: var(--constructor-row-container-height);
+}
+
+.my-row-opt-align-column-center {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+
+.my-row-opt-align-right {
+	text-align: right;
+}
+
+.my-row-opt-align-right * {
+	float: right;
+}
+
+.my-row-opt-align-left {
+	text-align: left;
+}
+
+.my-row-opt-align-left * {
+	float: left;
+}

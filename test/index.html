@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="../src/base.css">
+	<link rel="stylesheet" type="text/css" href="../src/header.css">
+	<link rel="stylesheet" type="text/css" href="../src/checkbox.css">
+	<link rel="stylesheet" type="text/css" href="../src/button.css">
+	<link rel="stylesheet" type="text/css" href="../src/text-input.css">
+	<link rel="stylesheet" type="text/css" href="../src/text.css">
+	<link rel="stylesheet" type="text/css" href="../src/constructor.css">
+	<link rel="stylesheet" type="text/css" href="../src/range.css">
+	<link rel="stylesheet" type="text/css" href="../src/progress.css">
+	<link rel="stylesheet" type="text/css" href="../src/loading.css">
+
+	<title>ok</title>
+</head>
+<body>
+	<header>
+		<div class="my-header-container">
+			<h1 id="title">Title</h1>
+			<ul>
+				<li>
+					<button id="header-button" class="my-border" style="border-color: white">Button</button>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="my-row-2 my-row-opt-align-column-center" style="background: url(./bg.jpg);">
+		<div class="my-row">
+			<span class="my-text-head">Head text</span>
+		</div>
+		<div class="my-row">
+			<span class="my-text-bottom">Botttom text</span>
+		</div>
+	</div>
+	<div class="my-row-2">
+		<div class="my-row-container my-row-opt-align-column-center">
+			<div class="my-row-large">
+				<span class="my-text-head" style="color: black">Elements</span>
+			</div>
+
+			<div class="my-row">
+				<span class="my-text-bottom" style="color: black;">Loading:</span>
+			</div>
+
+			<div class="my-row" style="width: auto;">
+				<div class="my-loading-container">
+					<div class="my-loading"></div>
+				</div>
+			</div>	
+
+			<div class="my-row">
+				<span class="my-text-bottom" style="color: black;">Text input:</span>
+			</div>
+
+			<div class="my-row-large">
+				<input type="text" name="" placeholder="Placeholder">
+			</div>
+			
+			<div class="my-row">
+				<span class="my-text-bottom" style="color: black;">Checkboxes:</span>
+			</div>
+
+			<div class="my-row" style="width: auto;">
+				<input data-index="0" id="optId2" type="checkbox"/>
+				<label data-type="checkbox" for="optId2"></label>
+			</div>
+
+			<div class="my-row">
+				<span class="my-text-bottom" style="color: black;">Buttons:</span>
+			</div>
+
+			<div class="my-row">
+				<button class="my-fill">Button</button>
+				<button class="my-border">Button</button>
+			</div>
+
+			<div class="my-row">
+				<span class="my-text-bottom" style="color: black;">Range:</span>
+			</div>
+
+			<div class="my-row" style="width: auto;">
+				<div class="my-range">
+					<div class="my-range-progress" data-my-range-id="range">
+						<input type="range" name="range" id="range" min="0" max="200" step="1" value="0"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="my-row">
+				<span class="my-text-bottom" style="color: black;">Progress bar:</span>
+			</div>
+
+			<div class="my-row" style="width: auto;">
+				<div class="my-row" style="height: 2em;">
+					<div class="my-progress-bar" id="progressbar-1">
+						<div class="my-progress-bar-complete"></div>
+					</div>
+				</div>
+				<div class="my-row">
+					<button id="startProgressBar" class="my-fill">Start</button>
+					<button id="resetProgressBar" class="my-border">Reset</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="my-row-2 my-row-opt-align-column-center" style="background: url(./bg2.jpg);">
+		<div class="my-row">
+			<span class="my-text-head">Fin.</span>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./script.js"></script>
+	<script type="text/javascript" src="../src/init.js"></script>
+</body>
+</html>

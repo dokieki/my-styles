@@ -1,0 +1,58 @@
+@font-face {
+	src: url('./fonts/Roboto-Light.ttf');
+	font-family: 'Roboto-Light';
+}
+
+@font-face {
+	src: url('./fonts/Roboto-LightItalic.ttf');
+	font-family: 'Roboto-LightItalic';
+}
+
+@font-face {
+	src: url('./fonts/Roboto-Medium.ttf');
+	font-family: 'Roboto-Medium';
+}
+
+img, svg {
+    user-select: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: inherit;
+	font-family: 'Roboto-Light';
+	z-index: 999;
+	scrollbar-color: white black !important;
+	scrollbar-width: thin !important;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+ 
+*::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .1);
+    width: 100%;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}

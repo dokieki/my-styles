@@ -1,0 +1,23 @@
+:root {
+	--theme-color: 255, 2, 102;
+	--second-color: #212121;
+	/* header settings */
+	--header-background: transparent;
+	--header-text-color: white;
+	/* */
+
+	/* text settings */
+	--text-color: white;
+	/* */
+
+	/* constructor settings */
+	--constructor-row-2-height: 70%;
+	--constructor-row-container-padding: 5em;
+	--constructor-row-container-width: auto;
+	--constructor-row-container-height: auto;
+	/* */
+
+	/* progress bar settings */
+	--progress-bar-transition: .2s;
+	/* */
+};

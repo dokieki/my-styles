@@ -1,0 +1,43 @@
+div.my-range {
+    background: rgba(0, 0, 0, .1);
+    width: 300px;
+}
+
+div.my-range-progress {
+    position: relative;
+    background: linear-gradient(to right, rgba(var(--theme-color), .8),
+                                        rgba(var(--theme-color), .7),
+                                        rgba(var(--theme-color), .5));
+    width: 0;
+    transition: .05s ease-in-out;
+}
+
+input[type="range"] {
+    display: block;
+    -webkit-appearance: none;
+    background: none;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: rgb(var(--theme-color));
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}​
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: rgb(var(--theme-color));
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1.1);
+}

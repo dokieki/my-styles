@@ -1,0 +1,11 @@
+.my-text-head {
+	font-family: 'Roboto-Medium';
+	font-size: 36px;
+	color: var(--text-color);
+}
+
+.my-text-bottom {
+	font-family: 'Roboto-Light';
+	font-size: 26px;
+	color: var(--text-color);
+}
