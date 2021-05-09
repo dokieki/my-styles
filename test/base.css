@@ -20,4 +20,8 @@
 	/* progress bar settings */
 	--progress-bar-transition: .2s;
 	/* */
+
+	/* stars settings */
+	--stars-color: #f7d913;
+	/* */
 };

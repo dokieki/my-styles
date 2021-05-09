@@ -1,0 +1,7 @@
+.my-color-black {
+	color: black;
+}
+
+.my-remove-shadow {
+	box-shadow: none !important;
+}

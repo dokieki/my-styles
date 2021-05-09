@@ -14,8 +14,14 @@
 	<link rel="stylesheet" type="text/css" href="../src/range.css">
 	<link rel="stylesheet" type="text/css" href="../src/progress.css">
 	<link rel="stylesheet" type="text/css" href="../src/loading.css">
+	<link rel="stylesheet" type="text/css" href="../src/stars.css">
+	<link rel="stylesheet" type="text/css" href="../src/colors.css">
+	<link rel="stylesheet" type="text/css" href="../src/card.css">
+	<link rel="stylesheet" type="text/css" href="../src/chips.css">
 
 	<title>ok</title>
+
+	<script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 	<header>
@@ -39,11 +45,50 @@
 	<div class="my-row-2">
 		<div class="my-row-container my-row-opt-align-column-center">
 			<div class="my-row-large">
-				<span class="my-text-head" style="color: black">Elements</span>
+				<span class="my-text-head my-color-black">Elements</span>
 			</div>
 
 			<div class="my-row">
-				<span class="my-text-bottom" style="color: black;">Loading:</span>
+				<span class="my-text-bottom my-color-black">Card:</span>
+			</div>
+			<div class="my-row my-row-opt-align-column-center" style="height: 41em;">
+				<div class="my-card">
+					<div class="my-card-data">
+						<div class="my-card-title">Title</div>
+						<div class="my-card-support">Support text</div>
+						<div class="my-card-actions">
+							<button class="my-fill my-remove-shadow">Action 1</button>
+							<button class="my-border my-remove-shadow">Action 2</button>
+						</div>
+					</div>
+				</div>
+				<div class="my-row"></div>
+				<div class="my-card">
+					<img class="my-card-media" src="https://via.placeholder.com/450x250">
+					<div class="my-card-data">
+						<div class="my-card-title">Title</div>
+						<div class="my-card-support">Support text</div>
+						<div class="my-card-actions">
+							<button class="my-fill my-remove-shadow">Action 1</button>
+							<button class="my-border my-remove-shadow">Action 2</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="my-row">
+				<span class="my-text-bottom my-color-black">Chips:</span>
+			</div>
+
+			<div class="my-row" style="width: auto;">
+				<input type="checkbox" class="my-chip" id="chip-1"></input>
+				<label class="my-chip" for="chip-1">Chip</label>
+				<input type="checkbox" class="my-chip-second-type" id="chip-2"></input>
+				<label class="my-chip-second-type" for="chip-2">Chip</label>
+			</div>	
+
+			<div class="my-row">
+				<span class="my-text-bottom my-color-black">Loading:</span>
 			</div>
 
 			<div class="my-row" style="width: auto;">
@@ -53,33 +98,38 @@
 			</div>	
 
 			<div class="my-row">
-				<span class="my-text-bottom" style="color: black;">Text input:</span>
+				<span class="my-text-bottom my-color-black">Text input:</span>
 			</div>
 
 			<div class="my-row-large">
-				<input type="text" name="" placeholder="Placeholder">
+				<input type="text" placeholder="Placeholder" class="my-text-input">
 			</div>
 			
 			<div class="my-row">
-				<span class="my-text-bottom" style="color: black;">Checkboxes:</span>
+				<span class="my-text-bottom my-color-black">Checkboxes:</span>
 			</div>
 
 			<div class="my-row" style="width: auto;">
-				<input data-index="0" id="optId2" type="checkbox"/>
-				<label data-type="checkbox" for="optId2"></label>
+				<input data-index="0" id="optId1" type="checkbox" class="my-checkbox-first-type" />
+				<label for="optId1" class="my-checkbox-first-type"></label>
+			</div>
+
+			<div class="my-row" style="width: auto;">
+				<input data-index="0" id="optId2" type="checkbox" class="my-checkbox-second-type" />
+				<label for="optId2"></label>
 			</div>
 
 			<div class="my-row">
-				<span class="my-text-bottom" style="color: black;">Buttons:</span>
+				<span class="my-text-bottom my-color-black">Buttons:</span>
 			</div>
 
-			<div class="my-row">
+			<div class="my-row" style="width: auto;">
 				<button class="my-fill">Button</button>
 				<button class="my-border">Button</button>
 			</div>
 
 			<div class="my-row">
-				<span class="my-text-bottom" style="color: black;">Range:</span>
+				<span class="my-text-bottom my-color-black">Range:</span>
 			</div>
 
 			<div class="my-row" style="width: auto;">
@@ -91,7 +141,7 @@
 			</div>
 
 			<div class="my-row">
-				<span class="my-text-bottom" style="color: black;">Progress bar:</span>
+				<span class="my-text-bottom my-color-black">Progress bar:</span>
 			</div>
 
 			<div class="my-row" style="width: auto;">
@@ -115,5 +165,7 @@
 
 	<script type="text/javascript" src="./script.js"></script>
 	<script type="text/javascript" src="../src/init.js"></script>
+	<script type="text/javascript" src="../src/range.js"></script>
+	<script type="text/javascript" src="../src/progressBar.js"></script>
 </body>
 </html>

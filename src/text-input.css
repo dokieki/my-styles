@@ -1,4 +1,4 @@
-input[type=text] {
+input.my-text-input[type=text] {
 	background: none;
 	font-size: 20px;
 	border: none;
@@ -10,11 +10,11 @@ input[type=text] {
 	transition: .3s;
 }
 
-input[type=text]:focus {
+input.my-text-input[type=text]:focus {
 	border-bottom: 2px solid rgb(var(--theme-color));
 }
 
-input[type=text]::placeholder {
+input.my-text-input[type=text]::placeholder {
 	font-family: 'Roboto-LightItalic';
 	opacity: .5;
 }

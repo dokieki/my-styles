@@ -1,0 +1,45 @@
+div.my-card {
+	min-width: 15em;
+	max-width: 450px;
+	height: auto;
+	background: white;
+	text-align: left;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+
+	border-radius: 5px;
+}
+
+div.my-card img.my-card-media {
+	width: auto;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+div.my-card div.my-card-data {
+	padding: 1em;
+}
+
+div.my-card div.my-card-data div.my-card-title {
+	font-family: 'Roboto-Medium';
+	font-size: 26px;
+	height: 1.5em;
+}
+
+div.my-card div.my-card-data div.my-card-support {
+	height: 2.5em;
+	opacity: .8;
+}
+
+div.my-card div.my-card-data div.my-card-actions {
+	width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+	div.my-card img.my-card-media {
+		width: 100%;
+	}
+
+	div.my-card div.my-card-data div.my-card-actions button {
+		font-size: 10px;
+	}
+}

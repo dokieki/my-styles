@@ -10,10 +10,192 @@
 
 
 
+#### Start
+
+Create files with your variables
+
+```css
+/* example base.css from directory test/ */
+:root {
+	--theme-color: 255, 2, 102;
+	--second-color: #212121;
+	/* header settings */
+	--header-background: transparent;
+	--header-text-color: white;
+	/* */
+
+	/* text settings */
+	--text-color: white;
+	/* */
+
+	/* constructor settings */
+	--constructor-row-2-height: 70%;
+	--constructor-row-container-padding: 5em;
+	--constructor-row-container-width: auto;
+	--constructor-row-container-height: auto;
+	/* */
+
+	/* progress bar settings */
+	--progress-bar-transition: .2s;
+	/* */
+
+	/* stars settings */
+	--stars-color: #f7d913;
+	/* */
+}
+```
+
+...and add init script to your html
+
+```html
+<script type="text/javascript" src="path/to/init.js"></script>
+```
+
+
+
+#### Cards
+
+```html
+<link rel="stylesheet" type="text/css" href="path/to/card.css">
+```
+
+```html
+<div class="my-card">
+    <img class="my-card-media" src="https://via.placeholder.com/450x250"> <!-- Optional -->
+	<div class="my-card-data">
+		<div class="my-card-title">Title</div>
+		<div class="my-card-support">Support text</div>
+		<div class="my-card-actions"> <!-- Optional -->
+			<button class="my-fill my-remove-shadow">Action 1</button>
+			<button class="my-border my-remove-shadow">Action 2</button>
+		</div>
+	</div>
+</div>
+```
+
+
+
+#### Chips
+
+```html
+<link rel="stylesheet" type="text/css" href="path/to/chips.css">
+```
+
+```html
+<!-- with background -->
+<input type="checkbox" class="my-chip" id="chip-1"></input>
+<label class="my-chip" for="chip-1">Chip</label> <!-- Chip value -->
+
+<!-- with outline -->
+<input type="checkbox" class="my-chip-second-type" id="chip-2"></input> 
+<label class="my-chip-second-type" for="chip-2">Chip</label>
+```
+
+
+
+#### Loading animation
+
+```html
+<link rel="stylesheet" type="text/css" href="path/to/loading.css">
+```
+
+```html
+<div class="my-loading-container">
+	<div class="my-loading"></div>
+</div>
+```
+
+
+
+#### Text input
+
+```html
+<link rel="stylesheet" type="text/css" href="path/to/text-input.css">
+```
+
+```html
+<input type="text" placeholder="Placeholder" class="my-text-input">
+```
+
+
+
+#### Checkboxes
+
+```html
+<link rel="stylesheet" type="text/css" href="path/to/checkbox.css">
+```
+
+```html
+<!-- looks like switcher -->
+<input data-index="0" id="optId1" type="checkbox" class="my-checkbox-first-type" />
+<label for="optId1" class="my-checkbox-first-type"></label>
+
+<!-- like default checkbox, but a little stylish -->
+<input data-index="0" id="optId2" type="checkbox" class="my-checkbox-second-type" />
+<label for="optId2"></label>
+```
+
+
+
+#### Buttons
+
+```html
+<link rel="stylesheet" type="text/css" href="path/to/button.css">
+```
+
+```html
+<!-- with background -->
+<button class="my-fill">Button</button>
+<!-- with border -->
+<button class="my-border">Button</button>
+```
+
+
+
+#### Range input
+
+```html
+<link rel="stylesheet" type="text/css" href="path/to/range.css">
+<script type="text/javascript" src="path/to/range.js"></script>
+```
+
+```html
+<div class="my-range">
+	<div class="my-range-progress" data-my-range-id="range">
+		<input type="range" id="range" min="0" max="200" step="1" value="0"/>
+	</div>
+</div>
+```
+
+
+
+#### Progress bar
+
+```html
+<link rel="stylesheet" type="text/css" href="path/to/progress.css">
+<script type="text/javascript" src="path/to/progressBar.js"></script>
+```
+
+```html
+<div class="my-progress-bar" id="progressbar-1">
+		<div class="my-progress-bar-complete"></div>
+</div>
+```
+
+```js
+/* Progress bar methods */
+UI.initProgressBar(progressBar /* progress bar element */, 30 /* time */);
+UI.resetProgressBar(progressBar /* progress bar element */);
+```
+
+
+
 ## Example website
 
 ![screen1](./images/screen1.png)
 
 ![screen2](./images/screen2.png)
+
+![screen3](./images/screen3.png)
 
 Source code of the site in the directory `test/`

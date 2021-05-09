@@ -1,0 +1,48 @@
+input.my-chip[type=checkbox], input.my-chip-second-type[type=checkbox] {
+    cursor: pointer;
+	-webkit-appearance: none;
+}
+
+label.my-chip {
+	display: inline-block;
+	min-width: 3em;
+	font-family: 'Roboto-Medium';
+	background: rgba(0, 0, 0, .1);
+	padding: .5em;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: .3s;
+	color: rgba(0, 0, 0, .5);
+}
+
+
+label.my-chip-second-type {
+	display: inline-block;
+	min-width: 3em;
+	font-family: 'Roboto-Medium';
+	border: 1px solid rgba(0, 0, 0, .1);
+	padding: .5em;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: .3s;
+	color: rgba(0, 0, 0, .5);
+}
+
+label.my-chip:hover {
+	color: rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, .15);
+}
+
+label.my-chip-second-type:hover {
+	color: rgba(0, 0, 0, .6);
+}
+
+input.my-chip[type=checkbox]:checked + label.my-chip {
+	background: rgba(var(--theme-color), .1);
+	color: rgb(var(--theme-color));
+}
+
+input.my-chip-second-type[type=checkbox]:checked + label.my-chip-second-type {
+	background: rgba(var(--theme-color), .1);
+	color: rgb(var(--theme-color));	
+}
