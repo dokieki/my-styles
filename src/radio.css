@@ -1,0 +1,13 @@
+input.my-radio-button[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 50px;
+    padding: .5em;
+    cursor: pointer;
+    transition: .1s;
+}
+
+input.my-radio-button[type=radio]:checked {
+    border-color: rgb(var(--theme-color));
+}

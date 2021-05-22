@@ -118,6 +118,17 @@ Create files with your variables
 ```
 
 
+#### Switches
+
+```html
+<link rel="stylesheet" type="text/css" href="path/to/switch.css">
+```
+
+```html
+<input data-index="0" id="optId1" type="checkbox" class="my-switch" />
+<label for="optId1" class="my-checkbox-first-type"></label>
+```
+
 
 #### Checkboxes
 
@@ -126,12 +137,7 @@ Create files with your variables
 ```
 
 ```html
-<!-- looks like switcher -->
-<input data-index="0" id="optId1" type="checkbox" class="my-checkbox-first-type" />
-<label for="optId1" class="my-checkbox-first-type"></label>
-
-<!-- like default checkbox, but a little stylish -->
-<input data-index="0" id="optId2" type="checkbox" class="my-checkbox-second-type" />
+<input data-index="0" id="optId2" type="checkbox" class="my-checkbox" />
 <label for="optId2"></label>
 ```
 
@@ -161,8 +167,12 @@ Create files with your variables
 
 ```html
 <div class="my-range">
-	<div class="my-range-progress" data-my-range-id="range">
-		<input type="range" id="range" min="0" max="200" step="1" value="0"/>
+	<div class="my-range-counter">
+		<span for="range">0</span>
+	</div>
+	<input type="range" class="my-range" id="range" min="0" max="200" step="1" value="0" />
+	<div class="my-range-progress">
+		<label for="range"></label>
 	</div>
 </div>
 ```
@@ -186,6 +196,20 @@ Create files with your variables
 /* Progress bar methods */
 UI.initProgressBar(progressBar /* progress bar element */, 30 /* time */);
 UI.resetProgressBar(progressBar /* progress bar element */);
+```
+
+#### Notifications
+
+```html
+<link rel="stylesheet" type="text/css" href="/path/to/notification.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script type="text/javascript" src="/path/to/notification.js"></script>
+```
+
+```js
+/* types: ok, error, info */
+
+UI.createNotification('ok' /* message type */, 'OK message' /* message content */, 3000, /* time for delete the notification (optional) */)
 ```
 
 

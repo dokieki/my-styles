@@ -3,6 +3,11 @@
 	min-height: 4em;
 }
 
+.my-row-little {
+	width: 5em;
+	height: 5em;
+}
+
 .my-row-large {
 	height: 6em;
 }
@@ -13,10 +18,14 @@
 }
 
 .my-row-container {
-	text-align: center;
+	text-align: var(--constructor-row-container-align);
 	padding: var(--constructor-row-container-padding);
 	min-width: var(--constructor-row-container-width);
 	min-height: var(--constructor-row-container-height);
+}
+
+.my-row-opt-inline {
+	display: inline-block;
 }
 
 .my-row-opt-align-column-center {

@@ -19,3 +19,15 @@ document.body.addEventListener('scroll', function() {
 		document.getElementById('header-button').style['border-color'] = 'white';
 	}
 });
+
+document.getElementById('notifOk').addEventListener('click', function() {
+	UI.createNotification('ok', 'Ok message');
+});
+
+document.getElementById('notifErr').addEventListener('click', function() {
+	UI.createNotification('error', 'Error message');
+});
+
+document.getElementById('notifInfo').addEventListener('click', function() {
+	UI.createNotification('info', 'Info message');
+});

@@ -1,43 +1,71 @@
 div.my-range {
-    background: rgba(0, 0, 0, .1);
     width: 300px;
-}
-
-div.my-range-progress {
-    position: relative;
-    background: linear-gradient(to right, rgba(var(--theme-color), .8),
-                                        rgba(var(--theme-color), .7),
-                                        rgba(var(--theme-color), .5));
-    width: 0;
-    transition: .05s ease-in-out;
+    min-height: 5em;
 }
 
 input[type="range"] {
-    display: block;
     -webkit-appearance: none;
-    background: none;
-    width: 300px;
+    width: 100%;
+    position: relative;
+    background: transparent;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    /* background: rgba(0, 0, 0, .1); */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
     height: 5px;
-    border-radius: 5px;
-    margin: 0 auto;
-    outline: 0;
 }
 
 input[type="range"]::-webkit-slider-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    border: none;
     -webkit-appearance: none;
-    background: rgb(var(--theme-color));
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: .3s ease-in-out;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-}​
-
-input[type="range"]::-webkit-slider-thumb:hover {
     background-color: rgb(var(--theme-color));
+    margin-top: -4px;
+    cursor: pointer;
+    position: relative;
+    transition: .3s all ease;
 }
 
 input[type="range"]::-webkit-slider-thumb:active {
-    transform: scale(1.1);
+    transform: scale(1.2);
+}
+
+div.my-range-counter {
+    text-align: left;
+    padding-right: 1.5em;
+    padding-left: .3em;
+}
+
+div.my-range-counter span {
+    transition: .1s;
+    font-family: 'Roboto-Medium';
+}
+
+div.my-range-progress {
+    background: rgba(0, 0, 0, .1);
+    height: 4px;
+    width: 100%;
+    margin-top: -.4em;
+}
+
+div.my-range-progress label {
+    height: 4px;
+    font-size: 14px;
+    transition: .1s;
+    float: left;
+    background: linear-gradient(to right, rgba(var(--theme-color), .8),
+                                        rgba(var(--theme-color), .7),
+                                        rgba(var(--theme-color), .5));
 }

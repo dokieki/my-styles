@@ -1,77 +1,21 @@
-input.my-checkbox-first-type[type=checkbox] {
-    display: none;
-}
-
-span.my-checkbox-description {
-    color: black;
-    font-family:'Roboto Medium';
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 15px;
-    margin-left: 3em;    
-    width: 85px;
-    user-select: none;
-}
-
-label.my-checkbox-first-type {
-    width: 65px;
-    height: 35px;
-    box-sizing: border-box;
-    border: 3px solid white;
-    float: left;
-    position: relative;
-    cursor: pointer;
-    transition: .4s ease;
-    background: rgba(0, 0, 0, .1);
-    border-radius: 20px;
-}
-
-input.my-checkbox-first-type[type=checkbox]:checked + label {
-    background: rgba(var(--theme-color), .2);
-}
-
-input.my-checkbox-first-type[type=checkbox]:checked + label:before {
-    left: 30px;
-    background: rgb(var(--theme-color));
-}
-
-label.my-checkbox-first-type:before {
-    transition: .3s ease;
-    content: '';
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    background: white;
-    top: -2px;
-    left: -2px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-}
-
-
-input.my-checkbox-second-type {
+input.my-checkbox {
     -webkit-appearance: none;
+    -moz-appearance: none;
     border: 1px solid rgba(0, 0, 0, .2);
     width: 20px;
     height: 20px;
-    transition: all .4s;
     text-align: center;
     stroke: transparent;
     content: '';
     cursor: pointer;
+    border-radius: 2px;
 }
 
-input.my-checkbox-second-type:checked {
+input.my-checkbox:checked {
     background: rgb(var(--theme-color));
 }
 
-input.my-checkbox-second-type:active {
-    transform: scale(.9);
-}
-
-input.my-checkbox-second-type:checked {
+input.my-checkbox:checked {
     content: url(svg/check.svg);
     stroke: white;
     font-size: 16px;

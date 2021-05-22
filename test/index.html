@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="base.css">
 	<link rel="stylesheet" type="text/css" href="../src/base.css">
 	<link rel="stylesheet" type="text/css" href="../src/header.css">
+	<link rel="stylesheet" type="text/css" href="../src/switch.css">
 	<link rel="stylesheet" type="text/css" href="../src/checkbox.css">
 	<link rel="stylesheet" type="text/css" href="../src/button.css">
 	<link rel="stylesheet" type="text/css" href="../src/text-input.css">
@@ -18,10 +19,12 @@
 	<link rel="stylesheet" type="text/css" href="../src/colors.css">
 	<link rel="stylesheet" type="text/css" href="../src/card.css">
 	<link rel="stylesheet" type="text/css" href="../src/chips.css">
+	<link rel="stylesheet" type="text/css" href="../src/radio.css">
+	<link rel="stylesheet" type="text/css" href="../src/notification.css">
 
 	<title>ok</title>
 
-	<script src="https://unpkg.com/feather-icons"></script>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
 	<header>
@@ -106,19 +109,29 @@
 			</div>
 			
 			<div class="my-row">
-				<span class="my-text-bottom my-color-black">Checkboxes:</span>
+				<span class="my-text-bottom my-color-black">Switch:</span>
 			</div>
 
 			<div class="my-row" style="width: auto;">
-				<input data-index="0" id="optId1" type="checkbox" class="my-checkbox-first-type" />
-				<label for="optId1" class="my-checkbox-first-type"></label>
+				<input data-index="0" id="optId1" type="checkbox" class="my-switch" />
+				<label for="optId1" class="my-switch"></label>
+			</div>
+
+			<div class="my-row">
+				<span class="my-text-bottom my-color-black">Checkbox:</span>
 			</div>
 
 			<div class="my-row" style="width: auto;">
-				<input data-index="0" id="optId2" type="checkbox" class="my-checkbox-second-type" />
-				<label for="optId2"></label>
+				<input data-index="0" id="optId2" type="checkbox" class="my-checkbox" />
 			</div>
 
+			<div class="my-row">
+				<span class="my-text-bottom my-color-black">Radio button:</span>
+			</div>
+
+			<div class="my-row">
+				<input type="radio" class="my-radio-button" id="optId3">
+			</div>
 			<div class="my-row">
 				<span class="my-text-bottom my-color-black">Buttons:</span>
 			</div>
@@ -134,8 +147,12 @@
 
 			<div class="my-row" style="width: auto;">
 				<div class="my-range">
-					<div class="my-range-progress" data-my-range-id="range">
-						<input type="range" name="range" id="range" min="0" max="200" step="1" value="0"/>
+					<div class="my-range-counter">
+						<span for="range">0</span>
+					</div>
+					<input type="range" class="my-range" id="range" min="0" max="200" step="1" value="0" />
+					<div class="my-range-progress">
+						<label for="range"></label>
 					</div>
 				</div>
 			</div>
@@ -155,6 +172,16 @@
 					<button id="resetProgressBar" class="my-border">Reset</button>
 				</div>
 			</div>
+
+			<div class="my-row">
+				<span class="my-text-bottom my-color-black">Notifications:</span>
+			</div>
+
+			<div class="my-row" style="width: auto;">
+				<button id="notifOk" class="my-fill">OK message</button>
+				<button id="notifErr" class="my-fill">Error message</button>
+				<button id="notifInfo" class="my-fill">Info message</button>
+			</div>
 		</div>
 	</div>
 	<div class="my-row-2 my-row-opt-align-column-center" style="background: url(./bg2.jpg);">
@@ -167,5 +194,6 @@
 	<script type="text/javascript" src="../src/init.js"></script>
 	<script type="text/javascript" src="../src/range.js"></script>
 	<script type="text/javascript" src="../src/progressBar.js"></script>
+	<script type="text/javascript" src="../src/notification.js"></script>
 </body>
 </html>

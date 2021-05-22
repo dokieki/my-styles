@@ -1,12 +1,17 @@
 ;(function() {
-	let ranges = [...document.getElementsByClassName('my-range-progress')];
+	let ranges = [...document.getElementsByClassName('my-range')];
 
 	for (let range of ranges) {
-		let rangel = document.getElementById(range.dataset.myRangeId);
+		let label = document.querySelector(`label[for="${range.id}"]`);
+		let counter = document.querySelector(`span[for="${range.id}"]`);
 
-		rangel.oninput = function() {
+		range.oninput = function() {
 			let percent = (parseInt(this.value) * 100) / parseInt(this.max);
-			range.style.width = `${percent}%`;
+			label.style.width = `${percent}%`;
+			if (counter) {
+				counter.innerHTML = percent;
+				counter.style['marginLeft'] = `${percent}%`;
+			}
 		};
 	}
 })();

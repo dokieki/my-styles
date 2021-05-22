@@ -1,0 +1,73 @@
+div.my-notif {
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+	width: 20em;
+	height: 3.5em;
+	transform: scale(.5);
+	opacity: 0;
+	transition: transform cubic-bezier(0.68, -0.55, 0.27, 1.55) .5s,
+				opacity .3s;
+	border-radius: 5px;
+	box-shadow: 0 10px 15px rgb(0, 0, 0, .3);
+}
+
+div.my-notif-content {
+	overflow: hidden;
+	word-wrap: break-word;
+    padding-top: 1.1em;
+    width: 72.5%;
+    float: right;
+    padding-right: 1.5em;
+}
+
+div.my-notif-ok {
+	background: #0F1F11;
+}
+
+div.my-notif-ok div.my-notif-content span {
+	color: #94FF9F;
+	/* #00F518 */
+}
+
+div.my-notif-error {
+	background: #1F0F0F;
+}
+
+div.my-notif-error div.my-notif-content span {
+	color: #FF9496;
+	/* #F50011 */
+}
+
+div.my-notif-info {
+	background: #0F111F;
+}
+
+div.my-notif-info div.my-notif-content span {
+	color: #94AEFF;
+	/* #0052F5 */
+}
+
+div.my-notif-svg {
+    float: left;
+    width: 3em;
+    text-align: center;
+    padding-top: 1em;
+    padding-left: .3em;
+}
+
+div.my-notif-svg-ok svg {
+	color: #00F518;	
+} 
+
+div.my-notif-svg-error svg {
+	color: #F50011;	
+}
+
+div.my-notif-svg-info svg {
+	color: #0052F5;	
+}
+
+div.my-notif:active {
+	transform: scale(1.05) !important;
+}
