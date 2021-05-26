@@ -1,0 +1,77 @@
+div#my-panel {
+	position: fixed;
+	width: 80%;
+	height: 100%;
+	background: white;
+	margin-left: -100%;
+	transition: all .5s;
+	z-index: 99999;
+}
+
+div.my-panel-opened {
+	margin-left: 0% !important;
+	box-shadow: 5px -2px 20px rgba(0, 0, 0, .2);
+}
+
+div#my-panel div.my-panel-header {
+	position: relative;
+	width: 100%;
+	height: 25%;
+	background-size: 130%;
+}
+
+div#my-panel div.my-panel-header div.my-panel-header-container {
+	position: absolute;
+	padding: .5em;
+	bottom: 0;
+}
+
+div#my-panel div.my-panel-header div.my-panel-header-container div.my-panel-header-text {
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto-Medium';
+	height: 1.5em;
+}
+
+div#my-panel div.my-panel-header div.my-panel-header-container div.my-panel-bottom-text {
+	color: white;
+	height: 1.5em;
+}
+
+div#my-panel ul.my-panel-items {
+	list-style: none;
+	padding: .5em;
+}
+
+div#my-panel ul.my-panel-items li {
+	margin-top: 1em;
+	padding: 10px;
+	font-family: 'Roboto-Medium';
+	border-radius: 3px;
+	height: 1.1em;
+	transition: .1s;
+}
+
+div#my-panel ul.my-panel-items li.my-panel-item-active {
+	background: rgba(var(--theme-color), .2);
+	color: rgb(var(--theme-color));
+}
+
+div#my-panel ul.my-panel-items li.my-panel-item-disabled {
+	color: rgba(0, 0, 0, .3);
+}
+
+div#my-panel ul.my-panel-items li span.my-panel-item-text {
+	float: left;
+}
+
+div#my-panel ul.my-panel-items span.my-panel-item-value {
+	float: right;
+	border-radius: 3px;
+	background: rgba(var(--theme-color), .2);
+	color: rgb(var(--theme-color));
+	padding: 7px;
+	font-family: 'Roboto-Medium';
+	font-size: 12px;
+	margin-top: -5px;
+}

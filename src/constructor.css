@@ -1,20 +1,24 @@
 .my-row {
 	width: 100%;
 	min-height: 4em;
+	color: var(--text-color);
 }
 
 .my-row-little {
 	width: 5em;
 	height: 5em;
+	color: var(--text-color);
 }
 
 .my-row-large {
 	height: 6em;
+	color: var(--text-color);
 }
 
 .my-row-2 {
 	width: 100%;
 	min-height: var(--constructor-row-2-height);
+	color: var(--text-color);
 }
 
 .my-row-container {

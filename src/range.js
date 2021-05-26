@@ -7,9 +7,10 @@
 
 		range.oninput = function() {
 			let percent = (parseInt(this.value) * 100) / parseInt(this.max);
-			label.style.width = `${percent}%`;
+			
+			if (label) label.style.width = `${percent}%`;
 			if (counter) {
-				counter.innerHTML = percent;
+				counter.innerHTML = percent.toFixed(0);
 				counter.style['marginLeft'] = `${percent}%`;
 			}
 		};

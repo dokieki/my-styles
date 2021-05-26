@@ -1,13 +1,16 @@
 :root {
 	--theme-color: 255, 2, 102;
 	--second-color: #212121;
+
+	--body-color: rgb(var(--theme-color));
+	
 	/* header settings */
 	--header-background: transparent;
 	--header-text-color: white;
 	/* */
 
 	/* text settings */
-	--text-color: #202020;
+	--text-color: white;
 	/* */
 
 	/* constructor settings */

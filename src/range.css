@@ -18,7 +18,6 @@ input[type="range"]:before {
     content: "";
     width: 100%;
     height: 2px;
-    /* background: rgba(0, 0, 0, .1); */
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
@@ -36,6 +35,7 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
     position: relative;
     transition: .3s all ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
 input[type="range"]::-webkit-slider-thumb:active {
@@ -51,6 +51,7 @@ div.my-range-counter {
 div.my-range-counter span {
     transition: .1s;
     font-family: 'Roboto-Medium';
+    border-bottom: 2px solid rgb(var(--theme-color));
 }
 
 div.my-range-progress {

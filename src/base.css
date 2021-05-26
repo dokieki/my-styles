@@ -48,6 +48,12 @@ img, svg {
     outline: 0 !important;
 }
 
+*:disabled + *:before {
+	border-color: rgba(0, 0, 0, .05) !important;
+    color: rgba(0, 0, 0, .3) !important;
+    background: #c9c9c9 !important;
+}
+
 html, body {
 	height: 100%;
 	width: 100%;

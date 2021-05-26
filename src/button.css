@@ -44,6 +44,7 @@ button.my-button {
 	border: none;
 }
 
+
 button.my-border:active, button.my-fill:active, button.my-button:active {
 	transform: scale(.95);
 	opacity: .9;
