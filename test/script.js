@@ -31,3 +31,7 @@ document.getElementById('notifErr').addEventListener('click', function() {
 document.getElementById('notifInfo').addEventListener('click', function() {
 	UI.createNotification('info', 'Info message');
 });
+
+document.getElementById('show-dialog').addEventListener('click', function() {
+	initDialog(document.getElementById('dialog'));
+});

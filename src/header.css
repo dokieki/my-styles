@@ -1,8 +1,8 @@
 header {
 	font-family: 'Roboto-Light';
 	background: var(--header-background);
+	height: 56px;
 	width: 100%;
-	height: 66px;
 	transition: .4s;
 	position: fixed;
 }
@@ -28,17 +28,50 @@ header div.my-header-container h1 a {
 }
 
 header div.my-header-container ul {
-	list-style: none;
-	width: auto;
+    list-style: none;
+    width: auto;
+    height: 100%;
 }
 
 header div.my-header-container ul li {
 	display: inline-block;
-	cursor: pointer;
-	transition: .5s;
-	padding: 7px;
-	font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+    padding: 7px;
+    height: 75%;
+    min-width: 2em;
+}
+
+header div.my-header-container ul li * {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header div.my-header-container ul li div.my-header-li-container {
+	width: 100%;
+    height: 100%;
+    transition: .3s;
+    border-radius: 100%;
+	position: relative;
+}
+
+header div.my-header-container ul li a.my-header-li-container {
+	transition: .3s;
+	position: relative;
+}
+
+header div.my-header-container ul li.my-header-user-avatar {
 	margin-left: 1em;
+	float: right;
+}
+
+header div.my-header-container ul li.my-header-user-avatar div.my-header-li-container img {
+	border-radius: 100%;
+	object-fit: cover;
+	width: 36px;
+	height: 36px;
+	transition: .5s;
 }
 
 header div.my-header-container ul li * {
@@ -46,12 +79,14 @@ header div.my-header-container ul li * {
 }
 
 header div.my-header-container ul li svg {
+	color: rgba(0, 0, 0, .6);
 	transform: scale(1);
 }
 
-a {
-	text-decoration: none;
-	color: black;
+header div.my-header-container ul li a.my-header-li-container:active,
+header div.my-header-container ul li div.my-header-li-container:active {
+	opacity: .5;
+	transform: scale(.95);
 }
 
 @media screen and (max-width: 780px) {

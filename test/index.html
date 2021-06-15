@@ -20,10 +20,11 @@
 	<link rel="stylesheet" type="text/css" href="../src/chips.css">
 	<link rel="stylesheet" type="text/css" href="../src/radio.css">
 	<link rel="stylesheet" type="text/css" href="../src/notification.css">
+	<link rel="stylesheet" type="text/css" href="../src/dialog.css">
 
 	<title>ok</title>
 
-	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 	<header>
@@ -31,7 +32,14 @@
 			<h1 id="title">Title</h1>
 			<ul>
 				<li>
-					<button id="header-button" class="my-border" style="border-color: white">Button</button>
+					<div class="my-header-li-container">
+						<button id="header-button" class="my-border" style="border-color: white">Button</button>
+					</div>
+				</li>
+				<li class="my-header-user-avatar">
+					<div class="my-header-li-container">
+						<img src="./dog.png">
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -181,6 +189,13 @@
 				<button id="notifErr" class="my-fill">Error message</button>
 				<button id="notifInfo" class="my-fill">Info message</button>
 			</div>
+
+			<div class="my-row">
+				<span class="my-text-bottom my-color-black">Dialog:</span>
+			</div>
+			<div class="my-row">
+				<button id="show-dialog" class="my-fill">Show dialog</button>
+			</div>
 		</div>
 	</div>
 	<div class="my-row-2 my-row-opt-align-column-center" style="background: url(./bg2.jpg);">
@@ -189,6 +204,11 @@
 		</div>
 	</div>
 
+	<dialog id="dialog">
+		<h1>Hi!</h1>
+	</dialog>
+
+	<script type="text/javascript" src="../src/dialog.js"></script>
 	<script type="text/javascript" src="./script.js"></script>
 	<script type="text/javascript" src="../src/init.js"></script>
 	<script type="text/javascript" src="../src/range.js"></script>

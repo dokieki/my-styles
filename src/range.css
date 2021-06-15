@@ -46,6 +46,7 @@ div.my-range-counter {
     text-align: left;
     padding-right: 1.5em;
     padding-left: .3em;
+    color: black;
 }
 
 div.my-range-counter span {
