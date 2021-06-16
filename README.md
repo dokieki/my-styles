@@ -154,6 +154,8 @@ Create files with your variables
 <button class="my-fill">Button</button>
 <!-- with border -->
 <button class="my-border">Button</button>
+<!-- with animation -->
+<button class="my-border click-event">Button</button>
 ```
 
 
@@ -210,6 +212,20 @@ UI.resetProgressBar(progressBar /* progress bar element */);
 /* types: ok, error, info */
 
 UI.createNotification('ok' /* message type */, 'OK message' /* message content */, 3000, /* time for delete the notification (optional) */)
+```
+
+
+
+### Dialog
+
+```html
+<link rel="stylesheet" type="text/css" href="/path/to/dialog.css">
+<script type="text/javascript" src="/path/to/dialog.js"></script>
+```
+
+```html
+<dialog id="my-dialog"></dialog>
+<button onclick="initDialog('my-dialog')">Show dialog</button>
 ```
 
 
